@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Form Validation</title>
+</head>
+<body>
+    <form name="loginform" onsubmit="return validation()">
+        User Name: <input type="text" id="uname" value="">
+        Password: <input type="text" id="pword" value="">
+        <input type="submit" id="btn" value="Login">
+    </form>
+    <script>
+        function validation(){
+
+            var u_name = document.loginform.uname.value;
+            var pass =document.loginform.pword.value;
+
+                if(u_name=="" || pass==""){
+                    alert("Both Field should be filled");
+                    return;
+                }
+
+                if(pass.length < 8 || pass.length > 15){
+                    alert("password should be between 8 to 15 character");
+                }
+                var str=u_name.slice(0,1);
+                if(str == "_" || str =="@" || str.match(/[0-9]/g)!=null ){
+                    alert("User name should not start with _,@, and Number");
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+ 
+[class*='col-']{
+    float:left;
+    border: 1px solid black;
+ 
+}
+.wrapper{
+    width:90%;
+    height:auto;
+    background-color: gray;
+    margin:auto;
+}
+#form{
+    text-align: center;
+}
+ 
+.header-height{height: 200px;}
+.menu-height{height: 50px;}
+.content-height{height: 600px;}
+.bigfooter-height{height: 300px;}
+.footer-height{height: 40px;}
+.image-height{height: 400px;}
+.frame-height{height:250px;}
+ 
+ .al{
+    border:none;
+ }
+
+  
+ #bc{
+    background-color: greenyellow;
+}
+
+
+ nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@keyframes banner{
+    0%{background-image:url(Images/1.jpg); background-size: cover;}
+    25%{background-image:url(Images/2.jpg);background-size: cover;}
+    50%{background-image:url(Images/4.jpg);background-size: cover; }
+    75%{background-image:url(Images/6.jpg); background-size: cover ; }
+    100%{background-image:url(Images/i5.png); background-size: cover ;}
+}
+ 
+.slider{
+    animation-name: banner;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,55 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-19{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+ 
+[class*='col-']{
+    float:left;
+    border: 1px solid black;
+ 
+}
+.wrapper{
+    width:80%;
+    height:auto;
+    background-color: gray;
+    margin:auto;
+}
+ 
+ 
+.header-height{height: 200px;}
+.menu-height{height: 50px;}
+.content-height{height: 600px;}
+.bigfooter-height{height: 300px;}
+.footer-height{height: 30px;}
+
+.frame-height{height:250px;}
+ 
+ .al{
+    border:none;
+ }
+@keyframes banner{
+    0%{background-image:url(flowers\2.jpg); background-size:cover;}
+    25%{background-image:url(flowers\pexels-adonyi-gábor-1458377.jpg); background-size:cover;}
+    50%{background-image:url(flowers\pexels-irina-iriser-1408221.jpg); background-size:cover;}
+    75%{background-image:url(flowers\pexels-kristina-paukshtite-701816.jpg); background-size:cover;}
+    100%{background-image:url(salviHTML\flowers/pexels-valeria-boltneva-74512.jpg); background-size:cover;}
+}
+ 
+.slider{
+    animation-name: banner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}

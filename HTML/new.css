@@ -1,0 +1,132 @@
+.wrapper{
+    height: 1200px;
+    width: 100;
+    background-color: gray;
+}
+
+.header{
+    height: 200px;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+.header .logo{
+    height: 200px;
+    width: 20%;
+    background-color: red;
+    float:left;
+
+}
+
+.header .banner{
+    height: 200px;
+    width: 80%;
+    background-color: green;
+    float: left;
+}
+
+.menu{
+    height:50px;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu ul li{
+    margin: px;
+    float: left;
+    width: 25%;
+    padding: ;
+}
+
+.menu ul li a{
+    background-color: burlywood;
+    display: block;
+    text-decoration:none;
+    text-align:center;
+    padding:10px 5px;
+    border-radius: 20px 20px 20px 20px;
+    transition: background-color 2s;
+}
+
+.menu .ul li a:hover{
+    border-radius: 0px 0px 0px 0px;
+}
+
+.content{
+    height: 600px;
+    width: 100%;
+    background-color: aquamarine;
+    float: left;
+}
+
+
+.content .one{
+    height: 300px;
+    width: 25%;
+    float: left;
+    background-image: url(./flowers/pexels-irina-iriser-1233414.jpg);
+    transform: skewY(0 deg);
+    transition: all 5s;
+    background-size: cover;
+}
+.content .one:hover{
+    transform: skewY(180deg);
+}
+.content .two{
+    height: 300px;
+    width: 25%;
+    float: left;
+    background-image: url(./flowers/pexels-irina-iriser-1408221.jpg);
+    background-size: cover;
+}
+.content .three{
+    height: 300px;
+    width: 25%;
+    float: left;
+    transform: scale();
+    transition: all 2s;
+    background-image: url(./flowers/pexels-adonyi-gábor-1458377.jpg);
+    background-size: cover;
+}
+
+.content .three:hover{
+    transform: scale(1.5);
+}
+.content .four{
+    height: 300px;
+    width: 25%;
+    float: left;
+    background-image: url(./flowers/2.jpg);
+    background-size: cover;
+}
+.content .five{
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+.content .six{
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+.content .seven{
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+
+
+.imgResponsive{
+    height: 100%;
+    width: 100%;
+}
+
+.middle{
+    text-align: center;
+}

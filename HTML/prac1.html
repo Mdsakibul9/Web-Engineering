@@ -1,0 +1,33 @@
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" id="f_name"></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" id="l_name"></td>
+    </tr>
+    <tr>
+        <td>Full Name:</td>
+        <td><input type="text" id="ful_name"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" id="btn" value="sign up"></td>
+    </tr>
+
+    <script>
+        var btnElement = document.getElementById("btn");
+
+        btnElement.onclick = function(){
+            var firstName = document.getElementById("f_name").value;
+            var lastName = document.getElementById("l_name").value;
+
+            var result = firstName+lastName;
+            
+            document.getElementById("ful_name").value=result;
+            document.alert(result);
+        }
+
+    </script>
+</table>

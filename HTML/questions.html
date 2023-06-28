@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="text" id="text" placeholder="Enter text">
+        <input type="text"  id="text5">
+        <input type="submit" value="submit" onclick="checkPalindrom()">
+    </form>
+    <script>
+        function checkPalindrom() {
+            var text = document.getElementById("text").value;
+            var text1 = text.split("").reverse().join("");
+            document.getElementById("text5").value=text1;
+            if (text == text1) {
+                alert("palindrom",text);
+            } else {
+                alert("not palindrom");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+

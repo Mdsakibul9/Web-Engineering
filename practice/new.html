@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h2>Bootstrap Horizontal Form</h2>
+                <hr/>
+                <div class="well">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">First Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="firstName" id="firstName" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Last Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="lastName" name="lastName" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Email Address</label>
+                            <div class="col-sm-9">
+                                <input type="email" name="emailAddress" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" id="password" name="password" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Retype Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" id="reTypePassword" class="form-control"/>
+                                <span id="res"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Address</label>
+                            <div class="col-sm-9">
+                                <textarea name="address" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 radio col-sm-offset-3">
+                                <label><input type="radio" name="gender" value="male"> Male </label>
+                                <label><input type="radio" name="gender" value="female"> Female </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Phone Number</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="phoneNumber" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Image</label>
+                            <div class="col-sm-9">
+                                <input type="file" name="image" accept="image/*" multiple>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">District Name</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" name="district">
+                                    <option>---Select District Name---</option>
+                                    <option value="dhaka">Dhaka</option>
+                                    <option value="noakhali">Noakhali</option>
+                                    <option value="barisal">Barisal</option>
+                                    <option value="comilla">Comilla</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 col-sm-offset-3">
+<!--                                    <div class="g-recaptcha " data-sitekey="6Ld4TiEUAAAAAAZGsEvsUKpRlUAsd1ORa-jj89We"></div>-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 col-sm-offset-3">
+                                <input type="submit" name="btn" class="btn btn-success btn-block" value="Submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+</body>
+</html>
